@@ -11,8 +11,5 @@
 .vscode/
 build/
 .cache
-wave/
 vsrc/*.sv
-include/config
-include/generated
 !wave/base.gtkw

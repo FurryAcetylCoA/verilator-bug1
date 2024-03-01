@@ -2,7 +2,7 @@
 module tb();
 
 reg clock, reset;
-TOP dut(.clock(clock), .reset(reset));
+TOP top(.clock(clock), .reset(reset));
 
 initial begin
     reset <= 'b1;
@@ -40,6 +40,9 @@ initial begin
     clock <= 'b0;
    
 end
-
+initial begin
+      $dumpfile("icarus_dump.vcd");
+      $dumpvars(0,top);
+end
 
 endmodule 

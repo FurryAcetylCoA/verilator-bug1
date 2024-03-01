@@ -6,7 +6,7 @@ TOP_NAME = TOP
 
 BIN = $(TOP_NAME)
 
-VERILATOR_FLAG +=  -O3 --build --cc --exe --trace-fst
+VERILATOR_FLAG += --build --cc --exe --trace-fst $(ARGS)
 
 all: clean sim wave
 
@@ -17,6 +17,7 @@ $(BIN):$(V_SRC)  $(C_SRC)
 		  --CFLAGS -g \
 		  -o $(BIN) 
 
+bin: clean $(BIN)
 sim: $(BIN)
 	obj_dir/$^
 
@@ -28,4 +29,4 @@ clean:
 	@rm -rf wave/wave.fst
 
 
-.PHONY: sim wave clean all
+.PHONY: bin sim wave clean all
