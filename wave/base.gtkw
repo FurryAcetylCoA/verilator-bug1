@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.117 (w)1999-2023 BSI
+[*] Fri Mar  1 08:03:48 2024
+[*]
+[dumpfile] "/home/coa/verilatorTest/npc/wave/wave.fst"
+[dumpfile_mtime] "Fri Mar  1 08:02:52 2024"
+[dumpfile_size] 607
+[savefile] "/home/coa/verilatorTest/npc/wave/base.gtkw"
+[timestart] 1
+[size] 2560 1322
+[pos] -1 -1
+*-2.411588 8 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.TOP.
+[sst_width] 373
+[signals_width] 492
+[sst_expanded] 1
+[sst_vpaned_height] 408
+@28
+TOP.TOP.clock
+TOP.TOP.reset
+@200
+-
+@28
+TOP.TOP.cpu.cpu_reset
+[color] 2
+TOP.TOP.cpu.reset_r
+@200
+-
+@29
+TOP.TOP.reset
+@28
+TOP.TOP.sync_2
+TOP.TOP.sync_1
+TOP.TOP.sync_0
+[pattern_trace] 1
+[pattern_trace] 0
